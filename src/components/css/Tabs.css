@@ -1,0 +1,14 @@
+.tabs {
+    display: flex;
+    width: 270px;  
+    justify-content: space-between;
+    border: 1px solid #ccc;
+}
+.tabs__tab {
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    cursor: pointer;
+}
+.tabs__tab_activate {
+    color: red;
+}

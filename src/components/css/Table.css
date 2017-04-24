@@ -1,0 +1,28 @@
+.table {
+  border: 1px solid #ccc;
+  padding:0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table__th, .table__td {
+  padding: 10px;
+  text-align: center;
+}
+
+.table__th {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .table {
+    border: none;
+    width: 100%;
+  }
+
+  .table__thead {
+    display: none;
+  }
+}

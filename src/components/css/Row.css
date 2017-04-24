@@ -1,0 +1,31 @@
+.table__tr {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    
+  .table__tr {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .table__td {
+    font-size: 13px;
+    border-bottom: 1px dotted #ccc;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .table__td:last-child {
+    border-bottom: 0;
+  }
+
+  .table__td:before {
+    content: attr(data-label);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
