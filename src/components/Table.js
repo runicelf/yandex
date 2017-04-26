@@ -18,6 +18,7 @@ class Table extends Component {
     }
     chooseHeader(type) {
         let result;
+        console.log(type);
         switch (type) {
             case 'lectures':
                 result = (['Школа', 'Тема', 'Аудитория', 'Лектор', 'Дата', 'Материалы' ]);
@@ -36,7 +37,7 @@ class Table extends Component {
   render() {
     return (
         <div>
-            <Tabs action={actions.CHANGE_TAB} location={this.state.location}/>
+            <Tabs action={actions.CHANGE_TAB} type='table' location={this.state.location}/>
             <table className='table'>
                 <thead className='table__thead'>
                     <tr>

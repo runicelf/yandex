@@ -18,7 +18,7 @@ class Tabs extends Component {
     */
     //actions.CHANGE_TAB
     changeTab(locateParam) {
-        emit(this.props.action, locateParam);
+        emit(this.props.action, this.props.type,  locateParam);
     }
     //.location
     isActivated(type) {

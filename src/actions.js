@@ -1,4 +1,6 @@
 export default {
   
   CHANGE_TAB: 'TAB:CHANGE',
+  ADD_FORM: 'FORM:ADD',
+  ADD_FORM_DATA: 'FORM:ADD_DATA'
 };
